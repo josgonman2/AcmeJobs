@@ -1,0 +1,134 @@
+# i18n_es.messages
+#
+# Copyright (c) 2019 Rafael Corchuelo.
+#
+# In keeping with the traditional purpose of furthering education and research, it is
+# the policy of the copyright owner to permit non-commercial use and redistribution of
+# this software. It has been tested carefully, but it is not guaranteed for any particular
+# purposes.  The copyright owner does not offer any warranties or representations, nor do
+# they accept any liabilities with respect to them.
+
+# master.banner.welcome #######################################################
+
+master.banner.background = #000000
+
+﻿# master.welcome ##############################################################
+
+master.welcome.title = ¡Bienvenidos!
+master.welcome.text = \
+	Bienvenidos a Acme Jobs!  Nunca antes ha sido tan sencillo encontrar un \
+	buen trabajo y que sea bien pagado.
+
+# master.menu #################################################################
+
+master.menu.home = Inicio
+master.menu.sign-up = Registrarse
+master.menu.sign-in = Entrar
+master.menu.sign-out = Salir
+
+# master.menu.anonymous #######################################################
+
+master.menu.anonymous = Anónimo
+master.menu.anonymous.favourite-linkA = Enlace al link favorito de Alejandro Fuentes Gómez
+master.menu.anonymous.favourite-linkB = Enlace al link favorito de Pedro Padilla Molina
+master.menu.anonymous.favourite-linkC = Enlace al link favorito de Jose Manuel Gonzalez
+master.menu.anonymous.favourite-linkD = Enlace al link favorito de Miguel Ponce Melero
+
+ 
+master.menu.anonymous.talklist = Fuentes Boletín: Listar Conversaciones
+master.menu.anonymous.talk = Fuentes: Boletín: Crear una conversación
+
+master.menu.anonymous.shout = ¡Gritar!
+master.menu.anonymous.shoutlist = Lista de Gritos
+
+master.menu.anonymous.listPlayersPedro = Padilla Boletín: Lista Jugadores NBA
+master.menu.anonymous.createPlayersPedro = Padilla Boletín: Crear Jugadores NBA
+
+master.menu.anonymous.offer = Gonzalez Boletín: Crear Oferta
+master.menu.anonymous.offerList = Gonzalez Boletín: Lista Ofertas
+
+master.menu.anonymous.book = Boletin Miguel: Crear Libro
+master.menu.anonymous.bookList = Miguel's Bulletin: Lista de Libros
+
+master.menu.anonymous.announcement = Lista de anuncios
+
+master.menu.anonymous.investor-recordList = Historial de Inversores
+
+master.menu.anonymous.companyRecordList = Listar Compañias
+master.menu.anonymous.companyTopRecordList =Lista de Mejores Compañias
+
+# master.menu.authenticated ###################################################
+
+master.menu.authenticated = Autenticado/a
+master.menu.authenticated.announcement = Lista de anuncios
+master.menu.authenticated.offer = Lista de Ofertas
+master.menu.authenticated.active-request.list = Lista peticiones
+master.menu.authenticated.challenge.list = Lista Retos
+
+master.menu.authenticated.company-record.list = Listar compañias
+master.menu.authenticated.investor-record.list = Listar inversores
+
+# master.menu.administrator ###################################################
+
+master.menu.administrator = Administrador
+master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.announcement = Lista de anuncios
+master.menu.administrator.dashboard = Tablero de control
+master.menu.administrator.configuration = Configuración
+
+# master.menu.provider ########################################################
+
+master.menu.provider = Proveedor
+master.menu.provider.favourite-link = Enlace favorito
+
+# master.menu.consumer ##########################################################
+
+master.menu.consumer = Consumidor
+master.menu.consumer.favourite-link = Enlace favorito
+
+# master.menu.user-account ####################################################
+
+master.menu.user-account = Cuenta
+master.menu.user-account.general-data = Datos generales
+master.menu.user-account.provider = Datos de proveedor
+master.menu.user-account.become-provider = Hazte proveedor
+master.menu.user-account.consumer = Datos de consumidor
+master.menu.user-account.become-consumer = Hazte consumidor
+
+﻿# master.footer ###############################################################
+
+master.footer.title.about = Nosotros
+master.footer.label.company = La empresa
+master.footer.label.license = Licencia
+master.footer.title.social = Social
+master.footer.label.linked-in = Linked-In
+master.footer.label.twitter = Twitter
+master.footer.title.languages = Lenguages
+master.footer.label.english = Inglés
+master.footer.label.spanish = Español
+
+# master.company ##############################################################
+
+master.company.title = La compañía
+master.company.text = \
+	Acme Jobs, la forma más fácil de encontrar un buen trabajo. \
+	Este es un proyecto de un grupo de estudiantes que cursan \
+	en Ingeniería del Software de la Universidad de Sevilla.
+master.company.name = Acme Jobs.
+master.company.address = Calle, número, Ciudad, Estado, País
+master.company.phone = +000 123 456
+master.company.email = contact@acme.com
+
+# master.license ##############################################################
+
+master.license.title = Licencia
+master.license.text = \
+	Puede usar este sistema de forma completamente gratuita respetando las leyes \
+	que sean aplicables.  No compartimos ninguna información sobre Ud. con ninguna \
+	otra empresa.  Tan sólo usamos tres cookies, a saber: "JSESSIONID" para identificar \
+	su sesión de trabajo, "remember" para mantener su información de autentificación \
+	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
+	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
+	local de su navegador para saber dónde tienen que ir algunos botones.
+	

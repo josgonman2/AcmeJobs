@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- sample-data.xml
+-
+- Copyright (c) 2019 Rafael Corchuelo.
+-
+- In keeping with the traditional purpose of furthering education and research, it is
+- the policy of the copyright owner to permit non-commercial use and redistribution of
+- this software. It has been tested carefully, but it is not guaranteed for any particular
+- purposes.  The copyright owner does not offer any warranties or representations, nor do
+- they accept any liabilities with respect to them.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<import resource="conversion-service.xml" />
+	
+	<!--  Shouts -->
+ 	
+	<bean id="shout01" class="acme.entities.shouts.Shout">
+		<property name="author" value="Jose Rodriguez"/>
+		<property name="text" value="I'm sad!"/>
+		<property name="moment" value="2019/09/09 10:00"/>
+	</bean>
+
+	<bean id ="shout02" class="acme.entities.shouts.Shout">
+		<property name ="author" value="Jane Doe"/>
+		<property name ="text" value="I'm the master of my room!"/>
+		<property name ="moment" value="2019/08/09 15:55"/>
+	</bean>
+	
+	<bean id ="shout03" class="acme.entities.shouts.Shout">
+		<property name ="author" value="Foo Bar"/>
+		<property name ="text" value="Just turning 20!"/>
+		<property name ="moment" value="2019/09/07 00:00"/>
+	</bean>
+	
+		<bean id ="talk01" class="acme.entities.talk.Talk">
+		<property name ="employer" value="Leslie Jhonson"/>
+		<property name ="age" value="23" />
+		<property name ="moment" value="2019/09/09 10:00"/>
+	</bean>
+	
+	<bean id ="talk02" class="acme.entities.talk.Talk">
+			<property name ="employer" value="Pedro Picapiedra"/>
+		<property name ="age" value="200"/>
+		<property name ="moment" value="2019/09/09 01:00"/>
+	</bean>
+	
+	<bean id ="talk03" class="acme.entities.talk.Talk">
+			<property name ="employer" value="Jack Sparrow"/>
+		<property name ="age" value="43"/>
+		<property name ="moment" value="2019/07/09 10:00"/>
+	</bean>
+
+	
+	<bean id="player01" class="acme.entities.players.Player">
+		<property name="player" value="Stephen Curry"/>
+		<property name="team" value="Golden State Warriors"/>
+		<property name="teamLastSeason" value="Golden State Warriors"/>
+		<property name="quote" value="Success is not an accident, success is actually a choice"/>
+	</bean>
+
+	<bean id="player02" class="acme.entities.players.Player">
+		<property name="player" value="Lebron James"/>
+		<property name="team" value="LA Lakers"/>
+		<property name="teamLastSeason" value="Cleveland Cavaliers"/>
+		<property name="quote" value="You can't be afraid to fail"/>
+	</bean>
+	
+	<bean id="player03" class="acme.entities.players.Player">
+		<property name="player" value="Kyrie Irving"/>
+		<property name="team" value="Brookyln Nets"/>
+		<property name="teamLastSeason" value="Boston Celtics"/>
+		<property name="quote" value="Everybody in the NBA is good. And then you have the really good ones and the great ones"/>
+	</bean>	
+	
+	<bean id="offer201" class="acme.entities.offers2.Offer2">
+		<property name="company" value="Servitesa"/>
+		<property name="job" value="Instalador de radios para coches"/>
+		<property name="salary" value="800.00"/>
+		<property name="moment" value="2019/09/07 14:00"/>
+	</bean>
+	
+	<bean id="offer202" class="acme.entities.offers2.Offer2">
+		<property name="company" value="Maderas Pancho"/>
+		<property name="job" value="Ebanista"/>
+		<property name="salary" value="1200.00"/>
+		<property name="moment" value="2019/09/23 16:00"/>
+	</bean>		
+	
+	<bean id="offer203" class="acme.entities.offers2.Offer2">
+		<property name="company" value="Kildare Catering"/>
+		<property name="job" value="Camarero"/>
+		<property name="salary" value="900.00"/>
+		<property name="moment" value="2019/10/08 11:30"/>
+	</bean>	
+	
+	<bean id="book01" class="acme.entities.books.Book">
+		<property name="author" value="George RR Martin"/>
+		<property name="title" value="A Game Of Thrones"/>
+		<property name="moment" value="2019/09/09 10:00"/>
+	</bean>
+	
+	<bean id="book02" class="acme.entities.books.Book">
+		<property name="author" value="Suzanne Collins"/>
+		<property name="title" value="The Hunger Games"/>
+		<property name="moment" value="2019/09/08 11:00"/>
+	</bean>
+	
+	<bean id="book03" class="acme.entities.books.Book">
+		<property name="author" value="Michael Ende"/>
+		<property name="title" value="The NeverEnding Story"/>
+		<property name="moment" value="2019/09/07 12:00"/>
+	</bean>
+	
+	<!-- Announcement -->
+	
+	<bean id="announcement01" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 01"/>
+		<property name="moment" value="2019/11/05 10:35"/>
+		<property name="link"><null/></property>
+		<property name="description" value="This is the description of a sample announcement"/>
+	</bean>
+	
+	<bean id="announcement02" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 02"/>
+		<property name="moment" value="2019/10/01 00:00"/>
+		<property name="link" value = "http://www.example.com"/>
+		<property name="description" value="This is the description of another announcement"/>
+	</bean>
+	
+	<bean id="announcement03" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample very old announcement 03"/>
+		<property name="moment" value="1900/10/10 19:35"/>
+		<property name="link" value = "http://www.example.com"/>
+		<property name="description" value="This is a very old announcement"/>
+	</bean>
+	
+	<!-- Offers -->
+	
+	<bean id="Offer01" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample Offer 01"/>
+		<property name="moment" value="2019/10/15 15:30"/>
+		<property name="deadline" value="2020/11/23	15:30"/>
+		<property name="description" value="Sample of description Offer 01"/>
+		<property name="minMon" value="€900.00"/>
+		<property name="maxMon" value="€1000.00"/>
+		<property name="ticker" value="OABCD-78948"/>
+	</bean>
+	
+	<bean id="Offer02" class="acme.entities.offers.Offer">
+		<property name="title" value="Ejemplo Oferta 2"/>
+		<property name="moment" value="2019/10/08 00:30"/>
+		<property name="deadline" value="2020/11/08 05:30"/>
+		<property name="description" value="Ejemplo de descripción del Offer 02"/>
+		<property name="minMon" value="€500.00"/>
+		<property name="maxMon" value="€1300.00"/>
+		<property name="ticker" value="OERTW-87458"/>
+	</bean>
+	
+	<bean id="Offer03" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample Offer 03"/>
+		<property name="moment" value="2019/09/01 15:30"/>
+		<property name="deadline" value="2020/12/20	15:30"/>
+		<property name="description" value="Sample of description Offer 03"/>
+		<property name="minMon" value="€800.00"/>
+		<property name="maxMon" value="€1200.00"/>
+		<property name="ticker" value="OGTFR-74125"/>
+	</bean>
+	
+	<!-- CompanyRecords -->
+	
+	<bean id="companyrecords01" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Apple"/>
+		<property name="sector" value="Technology"/>
+		<property name="ceo" value="Tim Cook"/>
+		<property name="activities" value="Doing new technology devices"/>
+		<property name="link" value="https://www.apple.com/"/>
+		<property name="phone" value="900812703"/>
+		<property name="email" value="apple@outlook.com"/>
+		<property name="incorporated" value="true"/>
+		<property name="stars" value="5"/>
+	</bean>
+	
+	<bean id="companyrecords02" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="HardwareMedia"/>
+		<property name="sector" value="Technology"/>
+		<property name="ceo" value="Alberto Joya"/>
+		<property name="activities" value="Fixing and building PCs"/>
+		<property name="link" value="https://www.hardwaremedia.es/"/>
+		<property name="phone" value="954125568"/>
+		<property name="email" value="hardwaremediaHM@gmail.com"/>
+		<property name="incorporated" value="false"/>
+		<property name="stars" value="3"/>
+	</bean>
+	
+	<bean id="companyrecords03" class="acme.entities.companyRecords.CompanyRecord">
+		<property name="name" value="Tencent"/>
+		<property name="sector" value="Internet services"/>
+		<property name="ceo" value="Ma Huateng"/>
+		<property name="activities" value="Providing products and services on the internet"/>
+		<property name="link" value="http://www.tencent.com/en-us/index.html"/>
+		<property name="phone" value="+111 12345678"/>
+		<property name="email" value="tencent@gmail.com"/>
+		<property name="incorporated" value="true"/>
+		<property name="stars" value="2"/>
+	</bean>
+    <bean id="request01" class="acme.entities.activerequests.ActiveRequest">
+		<property name="title" value="We are making the first request"/>
+		<property name="moment" value="2019/09/07 12:00"/>
+		<property name="deadline" value="2020/09/07 12:00"/>
+		<property name="description" value="It is used to test the app"/>
+		<property name="reward" value= "100€"/>
+		<property name="ticker" value="RAAAA-00001"/>
+		
+	</bean>
+    
+	<bean id="request02" class="acme.entities.activerequests.ActiveRequest">
+		<property name="title" value="We are making the second request"/>
+		<property name="moment" value="2019/01/07 12:00"/>
+		<property name="deadline" value="2020/04/07 02:00"/>
+		<property name="description" value="It is used to retest the app"/>
+		<property name="reward" value= "900€"/>
+		<property name="ticker" value="RAAAA-00002"/>
+		
+	</bean>
+	
+	<bean id="request03" class="acme.entities.activerequests.ActiveRequest">
+		<property name="title" value="We are making the third request"/>
+		<property name="moment" value="2019/07/07 15:00"/>
+		<property name="deadline" value="2020/03/01 00:00"/>
+		<property name="description" value="It is used to re-retest the app"/>
+		<property name="reward" value= "1000€"/>
+		<property name="ticker" value="RAAAA-00003"/>
+		
+	</bean>
+	
+	<bean id="investorRecord01" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="John doe"/>
+		<property name="sector" value="construction"/>
+		<property name="investorStatement" value="it's on the raise"/>
+		<property name="stars" value="2"/>
+	</bean>
+	<bean id="investorRecord02" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Joseph Joestar"/>
+		<property name="sector" value="Medicine"/>
+		<property name="investorStatement" value="Something everyone should invest"/>
+		<property name="stars" value="5"/>
+	</bean>
+	<bean id="investorRecord03" class="acme.entities.investorRecords.InvestorRecord">
+		<property name="name" value="Maria Martin"/>
+		<property name="sector" value="Computer Technology"/>
+		<property name="investorStatement" value="It's very important right now"/>
+		<property name="stars" value="4"/>
+	</bean>
+	
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+			<property name="title" value="We are testing the app"/>
+		<property name="deadline" value="2029/12/20	15:30"/>
+		<property name="description" value="It's a challenge"/>
+		<property name="goalGoldName" value="Solve the level A"/>		
+		<property name="goalSilverName" value="Solve the level B"/>
+		<property name="goalBronzeName" value="Solve the level C"/>
+		<property name="goldReward" value="3000€"/>
+		<property name="silverReward" value="1000€"/>
+		<property name="bronzeReward" value="500€"/>
+	
+			</bean>
+		
+		
+	<bean id="challenge02" class="acme.entities.challenges.Challenge">
+		<property name="title" value="We are retesting the app"/>
+		<property name="deadline" value="2029/12/20	15:30"/>
+		<property name="description" value="It's an important challenge"/>
+		<property name="goalGoldName" value="Solve the level A"/>		
+		<property name="goalSilverName" value="Solve the level B"/>
+		<property name="goalBronzeName" value="Solve the level C"/>
+		<property name="goldReward" value="3000€"/>
+		<property name="silverReward" value="1000€"/>
+		<property name="bronzeReward" value="500€"/>
+		
+		</bean>
+		
+	<bean id="challenge03" class="acme.entities.challenges.Challenge">
+		<property name="title" value="We are re-retesting the app"/>
+		<property name="deadline" value="2029/12/20	15:30"/>
+		<property name="description" value="It's very important challenge"/>
+		<property name="goalGoldName" value="Solve the level A"/>		
+		<property name="goalSilverName" value="Solve the level B"/>
+		<property name="goalBronzeName" value="Solve the level C"/>
+		<property name="goldReward" value="3000€"/>
+		<property name="silverReward" value="1000€"/>
+		<property name="bronzeReward" value="500€"/>
+		
+	</bean>
+		<bean id="comercialBanner01" class="acme.entities.banners.ComercialBanner">
+				<property name="picture" value="https://imgur.com/gallery/eTGPq"/>
+		
+				<property name="slogan" value="GUAU-MIAU"/>
+		
+				<property name="url" value="https://imgur.com/gallery/eTGPq"/>
+		
+				<property name="card" value="4012888888881881"/>
+	
+		</bean>
+	
+	<bean id="noComercialBanner01" class="acme.entities.banners.NoComercialBanner">
+				<property name="picture" value="https://imgur.com/gallery/eTGPq"/>
+		
+				<property name="slogan" value="GUAU-MIAU"/>
+		
+				<property name="url" value="https://imgur.com/gallery/eTGPq"/>
+		
+				<property name="jingle" value="Test"/>
+	
+		</bean>
+	
+	<bean id="configuration" class="acme.entities.configurations.Configuration">
+		<property name="spamThreshold" value="1.00"/>
+		<property name="spamWords" value="sex, hard core, viagra, cialis, nigeria, you've won, million dolar, sexo, extremo, nigeria, has ganado, millon de dolares"/>
+			
+	</bean>
+	
+	
+	
+</beans>
+
+
